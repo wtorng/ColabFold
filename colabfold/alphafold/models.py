@@ -20,7 +20,7 @@ def load_models_and_params(
     recompile_all_models: bool = False,
     stop_at_score: float = 100,
     rank_by: str = "plddt",
-    return_representations: bool = False,
+    return_representations: bool = True,
     training: bool = False,
     max_msa: str = None,
 ) -> List[Tuple[str, model.RunModel, haiku.Params]]:
